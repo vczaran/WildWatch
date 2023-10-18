@@ -1,10 +1,13 @@
 import GlobeComponent from "./GlobeComponent";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <GlobeComponent/>
-  );
-}
+     <>
+      <NavBar/>
+      <GlobeComponent/>
+    </>
+};
 
 
 export default App;
