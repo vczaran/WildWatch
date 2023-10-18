@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "species": "Javan Rhino",
+        "continent": "Asia",
+        "foundation": "International Rhino Foundation"
+    },
+    {
+        "id": 2,
+        "species": "Amur Leopard",
+        "continent": "Asia",
+        "foundation": "WildCats Conservation Alliance"
+    },
+    {
+        "id": 3,
+        "species": "Sumatran Tiger",
+        "continent": "Asia",
+        "foundation": "International Tiger Project"
+    },
+    {
+        "id": 4,
+        "species": "Amur Leopard",
+        "continent": "Asia",
+        "foundation": "WildCats Conservation Alliance"
+    },
+    {
+        "id": 5,
+        "species": "Eastern Gorilla",
+        "continent": "Africa",
+        "foundation": "Dian Fossey Gorilla Fund International"
+    },
+    {
+        "id": 6,
+        "species": "Black Rhino",
+        "continent": "Africa",
+        "foundation": "IRF"
+    },
+    {
+        "id": 7,
+        "species": "African Forest Elephant",
+        "continent": "Africa",
+        "foundation": "International Elephant Foundation"
+    },
+    {
+        "id": 8,
+        "species": "Floreana Mockingbird",
+        "continent": "South America",
+        "foundation": "Galapagos Conservation"
+    },
+    {
+        "id": 9,
+        "species": "Amazon River Dolphin",
+        "continent": "South America",
+        "foundation": "ARDCF"
+    },
+    {
+        "id": 10,
+        "species": "Brown-Headed Spider Monkey",
+        "continent": "South America",
+        "foundation": "Rainforest Trust"
+    },
+    {
+        "id": 11,
+        "species": "Emperor Penguin",
+        "continent": "Antarctica",
+        "foundation": "Global Penguin Society"
+    },
+    {
+        "id": 12,
+        "species": "Blue Whale",
+        "continent": "Antarctica",
+        "foundation": "Worldwide Life"
+    },
+    {
+        "id": 13,
+        "species": "Sei Whale",
+        "continent": "Antarctica",
+        "foundation": "WDC"
+    },
+    {
+        "id": 14,
+        "species": "Red Wolf",
+        "continent": "North America",
+        "foundation": "Red Wolf Coalition"
+    },
+    {
+        "id": 15,
+        "species": "Vancouver Island Marmot",
+        "continent": "North America",
+        "foundation": "Marmot Recovery Fund"
+    },
+    {
+        "id": 16,
+        "species": "California Condor",
+        "continent": "North America",
+        "foundation": "Peregrine Fund"
+    },
+    {
+        "id": 17,
+        "species": "Numbat",
+        "continent": "Australia",
+        "foundation": "Project Numbat"
+    },
+    {
+        "id": 18,
+        "species": "Koalas",
+        "continent": "Australia",
+        "foundation": "Save the Koala"
+    },
+    {
+        "id": 19,
+        "species": "Mountain Pygmy-possum",
+        "continent": "Australia",
+        "foundation": "The Nature Conservatory Australia"
+    },
+    {
+        "id": 20,
+        "species": "European Mink",
+        "continent": "Europe",
+        "foundation": "Lutreola"
+    },
+    {
+        "id": 21,
+        "species": "Iberian Lynx",
+        "continent": "Europe",
+        "foundation": "Felidae Fund"
+    },
+    {
+        "id": 22,
+        "species": "European Hamster",
+        "continent": "Europe",
+        "foundation": ""
+    }
+]

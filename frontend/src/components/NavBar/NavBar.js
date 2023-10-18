@@ -22,15 +22,17 @@ export default function NavBar () {
     return (
         <>
         <div className="nav-bar">
-            <button id="nav-species" onClick={redirectSpecies}>
-                Species List
-            </button>
             <h1 id="nav-logo">
-                WildWatch
+                WILDWATCH
             </h1>
-            <button id="nav-info" onClick={openModal}>
-                info/login
-            </button>
+            <div  onClick={redirectSpecies}>
+                <i className="fa-solid fa-otter fa-2xl icon" style={{color: "#1f2f4d",}} />
+                <h3 id="nav-species">Species List</h3>
+            </div>
+            <div id="nav-info" onClick={openModal}>
+                <i className="fa-solid fa-circle-info fa-2xl icon" style={{color: "#1f2f4d",}} />
+                <h3>Info</h3>
+            </div>
             {modalOpen && <ContinentModal closeModal={closeModal}/>}   
         </div>
         </>

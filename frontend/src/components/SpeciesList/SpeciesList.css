@@ -1,0 +1,11 @@
+.animal-item {
+    padding: 1vw;
+    border: 1px solid black;
+}
+
+/* .species-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
+    row-gap: 2vw;
+} */
