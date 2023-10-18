@@ -1,7 +1,8 @@
 .nav-bar {
     display: flex;
     justify-content: space-around;
-    height: 7vh;
+    background-image: linear-gradient(rgb(83, 17, 163), rgb(144, 78, 188));
+    color: white;
 }
 
 #nav-species, #nav-info {
