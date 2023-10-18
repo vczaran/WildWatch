@@ -1,6 +1,5 @@
 import { useData } from './data'; 
 import { Globe } from './Globe';
-import { Container, Row, Col } from 'react-bootstrap';
 
 function GlobeComponent() {
   const data = useData();

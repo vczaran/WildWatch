@@ -11,7 +11,7 @@ const path = geoPath(projection);
 const graticule = geoGraticule();
 
 
-export const Globe = ({data: {land, interiors}}) => {
+export const Globe = ({data: {land}}) => {
 
   const [MousePosition, SetMousePosition] = useState(intialMousePosition)
   const [mouseDown, SetMousedDown] = useState(false)
@@ -52,7 +52,5 @@ const handleMouseMove = useCallback((event) => {
        <path className = "feature" d={ path(feature)}/>
       )) 
     }
-   	 <path className = "interiors" d={ path(interiors)}/>
-   
   </g>);
 };

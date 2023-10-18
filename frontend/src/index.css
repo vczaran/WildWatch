@@ -20,6 +20,8 @@
   }
   
   .text {
+    text-align: center;
+    font-size: 100px;
     color: #169ca3;
     font-family: 'Brush Script MT', cursive;
    
@@ -28,20 +30,17 @@
   .globe{
     margin-left: auto;
     margin-right: auto;
-   
   }
   
   .globe .sphere {
-       fill: #2244c2;
-     position: fixed!important;
-      left: 0px!important;
-      margin-left: 0px!important;
+    fill: #228ac2;
+    position: fixed;
   }
   .globe .graticule {
     fill: none;
-       stroke: #C0C0BB;
+    stroke: #C0C0BB;
   }
   .globe .feature {
-    fill: #137B80;
-      stroke: #C0C0BB;
+    fill: #727572;
+    stroke: #6a6a67;
   }

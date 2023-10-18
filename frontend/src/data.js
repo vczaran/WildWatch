@@ -7,11 +7,9 @@ const jsonUrl = 'https://unpkg.com/world-atlas@2.0.2/land-50m.json';
 export const useData = () => {
   const [data, setData] = useState(null);
   
-
-
   useEffect(() => {
     json(jsonUrl).then(topojsonData => {
-      const {countries,land} = topojsonData.objects
+      const {land} = topojsonData.objects
       setData(
         { land: feature(topojsonData, land) }
       )
