@@ -40,6 +40,10 @@ const handleMouseMove = useCallback((event) => {
   
 },[SetMousePosition, mouseDown])
 
+
+function handleClick () {
+  console.log('CLICK');
+}
   
   return(
   <g  className="globe" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
@@ -49,8 +53,20 @@ const handleMouseMove = useCallback((event) => {
      
     {
       land.features.map(feature => (
-       <path className = "feature" d={ path(feature)}/>
+       <path className = "feature" d={ path(feature)} onClick={handleClick}/>
       )) 
     }
   </g>);
+
+// Globe w/out mouse rotation
+// return(
+//   <g className="globe" >
+//   <path className = "sphere" d={ path({type: 'Sphere'})}/>
+//   {
+//         land.features.map(feature => (
+//         <path className = "feature" d={ path(feature)}/>
+//        ))
+//    }
+//   </g>
+// );
 };
