@@ -11,3 +11,8 @@
 .icon {
     margin-top: 4vh;
 }
+
+.nav-link {
+    text-decoration:  none;
+    color: black;
+}

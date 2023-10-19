@@ -28,7 +28,7 @@ export default function SpeciesList () {
 
     return (
         <div className="species-list">
-            {data.map((animal) =>  <SpeciesItem animal={animal}/>)}
+            {data.map((animal) =>  <SpeciesItem key={animal.id} animal={animal}/>)}
         </div>
     )
 }

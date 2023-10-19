@@ -1,11 +1,23 @@
 .animal-item {
-    padding: 1vw;
+    display: flex;
     border: 1px solid black;
+    margin: 2vw;
+    padding: 0px;
 }
 
-/* .species-list {
+.animal-item:hover {
+    scale: 102%;
+}
+
+.species-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2vw;
-    row-gap: 2vw;
-} */
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.animal-image {
+    object-fit: cover;
+    height: 20vw;
+    width: 25vw;
+}
+
