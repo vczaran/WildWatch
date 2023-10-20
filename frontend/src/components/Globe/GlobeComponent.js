@@ -1,5 +1,6 @@
 import { GlobeData } from './data'; 
 import { Globe } from './Globe';
+import './Globe.css';
 
 function GlobeComponent() {
   const data = GlobeData();
