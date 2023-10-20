@@ -10,7 +10,7 @@ function GlobeComponent() {
 
   return (
     <>      
-        <svg width='80vw' height='100vh' viewBox="40 0 900 500" className="d-block m-auto">
+        <svg width='80vw' height='85vh' viewBox="40 0 900 500" className="d-block m-auto">
             <Globe data={data}/>
         </svg>
     </>

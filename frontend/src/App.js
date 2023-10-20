@@ -8,8 +8,11 @@ function App() {
     <>
 
       <NavBar/>
-
+    
       <Switch>
+        <Route exact path="/">
+          <GlobeComponent/>
+        </Route>
         <Route exact path="/species">
           <SpeciesList/>
         </Route>
