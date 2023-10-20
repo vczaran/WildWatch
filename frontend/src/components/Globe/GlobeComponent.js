@@ -1,8 +1,8 @@
-import { useData } from './data'; 
+import { GlobeData } from './data'; 
 import { Globe } from './Globe';
 
 function GlobeComponent() {
-  const data = useData();
+  const data = GlobeData();
 
   if (!data) {
     return <pre className='text'>Loading..</pre>;

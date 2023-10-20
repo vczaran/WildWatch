@@ -1,10 +1,8 @@
 /* TODO Add site-wide styles */
-<<<<<<< HEAD
 * {
     /* font-family: 'Young Serif', serif; */
     font-family: 'Roboto Condensed', sans-serif;
 }
-=======
     
   svg {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
@@ -50,4 +48,3 @@
     fill: #727572;
     stroke: #6a6a67;
   }
->>>>>>> main

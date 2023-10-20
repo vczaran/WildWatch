@@ -4,7 +4,7 @@ import { feature } from 'topojson-client';
 
 const jsonUrl = 'https://unpkg.com/world-atlas@2.0.2/land-50m.json';
 
-export const useData = () => {
+export const GlobeData = () => {
   const [data, setData] = useState(null);
   
   useEffect(() => {
