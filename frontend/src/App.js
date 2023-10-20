@@ -1,3 +1,4 @@
+import GlobeComponent from "./GlobeComponent";
 import NavBar from "./components/NavBar/NavBar";
 import SpeciesList from "./components/SpeciesList/SpeciesList";
 import { Route, Switch } from "react-router-dom";

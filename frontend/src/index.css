@@ -1,5 +1,53 @@
 /* TODO Add site-wide styles */
+<<<<<<< HEAD
 * {
     /* font-family: 'Young Serif', serif; */
     font-family: 'Roboto Condensed', sans-serif;
 }
+=======
+    
+  svg {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+  
+  .star{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:black;
+    animation: space 180s ease-in-out infinite;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 5px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.10) 3px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 100px;
+    color: #169ca3;
+    font-family: 'Brush Script MT', cursive;
+   
+  }
+  
+  .globe{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .globe .sphere {
+    fill: #228ac2;
+    position: fixed;
+  }
+  .globe .graticule {
+    fill: none;
+    stroke: #C0C0BB;
+  }
+  .globe .feature {
+    fill: #727572;
+    stroke: #6a6a67;
+  }
+>>>>>>> main
