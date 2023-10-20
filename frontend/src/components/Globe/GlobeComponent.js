@@ -6,7 +6,7 @@ function GlobeComponent() {
   const data = GlobeData();
 
   if (!data) {
-    return <pre className='text'>Loading..</pre>;
+    return <pre className='text'>Loading...</pre>;
   }
 
   return (

@@ -11,7 +11,7 @@ const path = geoPath(projection);
 const graticule = geoGraticule();
 
 
-export const Globe = ({data: {land}}) => {
+export const Globe = ({data: {continents}}) => {
 
   const [MousePosition, SetMousePosition] = useState(intialMousePosition)
   const [mouseDown, SetMousedDown] = useState(false)
@@ -50,7 +50,7 @@ function handleClick () {
       <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
      
     {
-      land.features.map(feature => (
+      continents.features.map(feature => (
        <path className = "feature" d={ path(feature)} onClick={handleClick}/>
       )) 
     }
