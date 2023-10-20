@@ -1,18 +1,18 @@
 .nav-bar {
     display: flex;
     justify-content: space-around;
-    height: 7vh;
+    background-image: linear-gradient(rgb(194, 199, 232), rgb(228, 230, 241));
 }
 
-#nav-species, #nav-info {
-    background-color:  white;
-    border-radius: 5px;
-    border: 1px solid grey;
-    height: 4vh;
-    width: 8vw;
+.nav-bar * {
     cursor: pointer;
 }
 
-#nav-species:hover, #nav-info:hover {
-    background-color: rgb(232, 245, 232);
+.icon {
+    margin-top: 4vh;
+}
+
+.nav-link {
+    text-decoration:  none;
+    color: black;
 }
