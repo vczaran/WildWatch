@@ -2,20 +2,6 @@ svg {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
   
-  .star{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color:black;
-    animation: space 180s ease-in-out infinite;
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 5px, transparent 40px),
-    radial-gradient(white, rgba(255,255,255,.10) 3px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  }
   
   .text {
     text-align: center;
@@ -31,14 +17,20 @@ svg {
   }
   
   .globe .sphere {
-    fill: #228ac2;
+    fill:rgb(31, 47, 77);
     position: fixed;
   }
   .globe .graticule {
     fill: none;
     stroke: #C0C0BB;
   }
+
   .globe .feature {
-    fill: #727572;
-    stroke: #6a6a67;
+    fill: rgb(194, 199, 232);
+    stroke: rgb(174, 178, 208);
+  }
+
+  .globe .feature:hover {
+    fill: rgb(135, 139, 162);
+    cursor: pointer;
   }

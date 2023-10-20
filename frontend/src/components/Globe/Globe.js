@@ -34,8 +34,6 @@ const handleMouseMove = useCallback((event) => {
   if(mouseDown){
     SetMousePosition({x:clientX, y:clientY});
     $('.globe').css('cursor', 'pointer')
-    $('.star').css('backgroundPositionX', clientX);
-    $('.star').css('backgroundPositionY', clientY);
   }
   
 },[SetMousePosition, mouseDown])
