@@ -1,0 +1,40 @@
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.text {
+  text-align: center;
+  font-size: 100px;
+  color: rgb(31, 47, 77);
+  font-family: 'Brush Script MT', cursive;
+ 
+}
+
+.globe-container {
+ display: block;
+ margin: auto;
+}
+
+.globe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.globe .sphere {
+  fill:rgb(31, 47, 77);
+}
+
+.globe .graticule {
+  fill: none;
+  stroke: #C0C0BB;
+}
+
+.globe .feature {
+  fill: rgb(194, 199, 232);
+  stroke: rgb(174, 178, 208);
+}
+
+.globe .feature:hover {
+  fill: rgb(135, 139, 162);
+  cursor: pointer;
+}

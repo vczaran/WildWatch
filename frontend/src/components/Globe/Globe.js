@@ -11,7 +11,7 @@ const path = geoPath(projection);
 const graticule = geoGraticule();
 
 
-export const Globe = ({data: {land}}) => {
+export const Globe = ({data: {continents}}) => {
 
   const [MousePosition, SetMousePosition] = useState(intialMousePosition)
   const [mouseDown, SetMousedDown] = useState(false)
@@ -34,15 +34,30 @@ const handleMouseMove = useCallback((event) => {
   if(mouseDown){
     SetMousePosition({x:clientX, y:clientY});
     $('.globe').css('cursor', 'pointer')
-    $('.star').css('backgroundPositionX', clientX);
-    $('.star').css('backgroundPositionY', clientY);
   }
   
 },[SetMousePosition, mouseDown])
 
 
-function handleClick () {
-  console.log('CLICK');
+function handleClick (feature) {
+  let continent = feature.properties.CONTINENT;
+
+  if (continent === "North America") {
+    console.log('North America');
+  } else if (continent === "South America") {
+    console.log('South America');
+  } else if (continent === "Europe") {
+    console.log('Europe');
+  } else if (continent === "Asia") {
+    console.log('Asia'); 
+  } else if (continent === 'Africa') {
+    console.log('Africa');
+  } else if (continent === 'Antarctica') {
+    console.log('Antarctica');
+  } else if (continent === 'Australia') {
+    console.log('Australia');
+  }
+ 
 }
   
   return(
@@ -52,8 +67,8 @@ function handleClick () {
       <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
      
     {
-      land.features.map(feature => (
-       <path className = "feature" d={ path(feature)} onClick={handleClick}/>
+      continents.features.map(feature => (
+       <path className = "feature" d={ path(feature)} onClick={()=>handleClick(feature)}/>
       )) 
     }
   </g>);
