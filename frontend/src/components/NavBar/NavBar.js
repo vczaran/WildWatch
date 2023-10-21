@@ -5,8 +5,8 @@ import TutorialModal from '../TutorialModal/TutorialModal';
 import AboutUsModal from '../AboutUsModal/AboutUsModal';
 
 export default function NavBar () {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [modalType, setModalType] = useState("");
+    const [modalOpen, setModalOpen] = useState(true);
+    const [modalType, setModalType] = useState("tutorial");
 
     const openModal = () => {
         setModalOpen(true)
