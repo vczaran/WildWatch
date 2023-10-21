@@ -11,7 +11,7 @@
 
 .app-desc {
     font-size: 2vh;
-    width: 50vw;
+    width: auto;
 }
 
 .info-container {
@@ -20,6 +20,7 @@
 
 #individual-info {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
 }
@@ -41,8 +42,8 @@
 }
 
 #individual-info img {
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
 }
 
