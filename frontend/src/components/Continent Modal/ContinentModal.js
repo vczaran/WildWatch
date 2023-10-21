@@ -1,17 +1,39 @@
 import { Modal } from "../Modal/Modal";
 import "./ContinentModal.css"
+import SpeciesItemModal from "./SpeciesItemModal";
+import { useEffect, useState } from "react";
 
-export default function ContinentModal ({closeModal}) {
+export default function ContinentModal (props) {
+    const { closeModal, continent } = props;
+    const [data, setData] = useState([]);
+
+    const getData = () => {
+        fetch('SpeciesByCont.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }).then(function(resp) {
+            return resp.json();
+        }).then((myJson) => {
+            let data = myJson.filter((species) => species.continent === continent)
+            setData(data)
+        });
+    };
+
+    useEffect(() => {
+        getData(continent);
+    }, continent);
+
     return (
         <Modal onClose={closeModal}>
-            <h2 id="continent-title">Continent</h2>
+            <h2 id="continent-title">{continent}</h2>
             <div id="species-grid">
-                <div>Species1</div>
-                <div>Foundation 1</div>
-                <div>Species2</div>
-                <div>Foundation 2</div>
-                <div>Species3</div>
-                <div>Foundation 3</div>
+                { data.map((species) => {
+                    return (
+                        <SpeciesItemModal species={species}/>
+                    )
+                })}
             </div>
         </Modal>
     )

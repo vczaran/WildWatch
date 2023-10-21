@@ -3,9 +3,9 @@ import SpeciesItem from "./SpeciesItem";
 import './SpeciesList.css'
 
 export default function SpeciesList () {
-    const [data,setData]=useState([]);
+    const [data,setData] = useState([]);
 
-    const getData=()=>{
+    const getData = () => {
         fetch('SpeciesByCont.json'
         ,{
             headers : { 

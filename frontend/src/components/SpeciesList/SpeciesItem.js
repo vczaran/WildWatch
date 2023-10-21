@@ -17,7 +17,7 @@ export default function SpeciesItem ({animal}) {
                         {name}
                     </h2>
                     <div>
-                        Continent:{continent}
+                        Continent: {continent}
                     </div>
                     <div>
                         Foundation: 

@@ -1,6 +1,7 @@
 import { geoOrthographic, geoPath, geoGraticule } from 'd3';
 import React, {useState, useCallback} from 'react';
 import $ from 'jquery';
+import ContinentModal from '../Continent Modal/ContinentModal';
 
 const width = 960;
 const height = 500;
@@ -13,8 +14,17 @@ const graticule = geoGraticule();
 
 export const Globe = ({data: {continents}}) => {
 
-  const [MousePosition, SetMousePosition] = useState(intialMousePosition)
-  const [mouseDown, SetMousedDown] = useState(false)
+  const [MousePosition, SetMousePosition] = useState(intialMousePosition);
+  const [mouseDown, SetMousedDown] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [continent, setContinent] = useState("");
+  // const openModal = () => {
+  //   setModalOpen(true);
+  // }
+
+  const closeModal = () => {
+    setModalOpen(false);
+  }
 
   const handleMouseDown = useCallback((event) => {
 
@@ -30,7 +40,7 @@ const handleMouseUp = useCallback((event) => {
 
 const handleMouseMove = useCallback((event) => {
   
-  const {clientX, clientY}= event;
+  const {clientX, clientY} = event;
   if(mouseDown){
     SetMousePosition({x:clientX, y:clientY});
     $('.globe').css('cursor', 'pointer')
@@ -40,38 +50,46 @@ const handleMouseMove = useCallback((event) => {
 
 
 function handleClick (feature) {
+  setModalOpen(true);
   let continent = feature.properties.CONTINENT;
-
   if (continent === "North America") {
-    console.log('North America');
+    setContinent("North America");
   } else if (continent === "South America") {
-    console.log('South America');
+    setContinent('South America');
   } else if (continent === "Europe") {
-    console.log('Europe');
+    setContinent('Europe');
   } else if (continent === "Asia") {
-    console.log('Asia'); 
+    setContinent('Asia'); 
   } else if (continent === 'Africa') {
-    console.log('Africa');
+    setContinent('Africa');
   } else if (continent === 'Antarctica') {
-    console.log('Antarctica');
+    setContinent('Antarctica');
   } else if (continent === 'Australia') {
-    console.log('Australia');
+    setContinent('Australia');
   }
  
 }
   
   return(
-  <g  className="globe" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
-      {projection.rotate([MousePosition.x + 30 / 60, -MousePosition.y, 0])}
-     <path className = "sphere" d={ path({type: 'Sphere'})}/>
-      <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
-     
-    {
-      continents.features.map(feature => (
-       <path className = "feature" d={ path(feature)} onClick={()=>handleClick(feature)}/>
-      )) 
-    }
-  </g>);
+    <>
+      <g  className="globe" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
+          {projection.rotate([MousePosition.x + 30 / 60, -MousePosition.y, 0])}
+          <path className = "sphere" d={ path({type: 'Sphere'})}/>
+          <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
+        
+        {
+          continents.features.map(feature => (
+          <path className = "feature" d={path(feature)} onClick={()=>handleClick(feature)}/>
+          )) 
+        }
+      </g>;
+
+      {modalOpen && 
+        <ContinentModal 
+          closeModal={closeModal}
+          continent={continent}/>}   
+    </>
+  )
 
 // Globe w/out mouse rotation
 // return(
