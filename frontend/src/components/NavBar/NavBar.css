@@ -10,16 +10,20 @@
     font-size: 3vh;
 }
 
-.icon {
-    margin-top: 5vh;
-}
-
-.nav-link {
+#nav-about-us, #nav-tutorial, .nav-link {
+    display: flex;
+    align-items: center;
     text-decoration:  none;
     color: black;
 }
 
+.fa-solid {
+    display: flex;
+    align-items: center;
+}
+
 #nav-logo {
-    margin-top: 3vh;
+    display: flex;
+    align-items: center;
     font-size: 4vh;
 }
