@@ -4,7 +4,7 @@
         "species": "Javan Rhino",
         "continent": "Asia",
         "foundation": "International Rhino Foundation",
-        "url": "",
+        "url": "https://rhinos.org/",
         "photo": "https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/2a379e33-1be3-482d-89c1-4f1c880211d6/Javan%20rhino%20face%20iStock-1305319326%20resized.jpeg"
     },
     {
@@ -12,7 +12,7 @@
         "species": "Amur Leopard",
         "continent": "Asia",
         "foundation": "WildCats Conservation Alliance",
-        "url": "",
+        "url": "https://conservewildcats.org/",
         "photo": "https://i.natgeofe.com/k/bfdaa7fd-c683-40ba-b36a-86cb2dbb5b64/amur-leopard-cubs.jpg"
     },
     {
@@ -20,7 +20,7 @@
         "species": "Sumatran Tiger",
         "continent": "Asia",
         "foundation": "International Tiger Project",
-        "url": "",
+        "url": "https://internationaltigerproject.org/",
         "photo": "https://www.worldatlas.com/r/w960-q80/upload/68/bf/40/shutterstock-42692746.jpg"
     },
     {
@@ -28,15 +28,15 @@
         "species": "Eastern Gorilla",
         "continent": "Africa",
         "foundation": "Dian Fossey Gorilla Fund International",
-        "url": "",
+        "url": "https://gorillafund.org/",
         "photo": "https://wwfint.awsassets.panda.org/img/eastern_lowland_gorilla_279075_1_408899.jpg"
     },
     {
         "id": 5,
         "species": "Black Rhino",
         "continent": "Africa",
-        "foundation": "IRF",
-        "url": "",
+        "foundation": "International Rhino Foundation",
+        "url": "https://rhinos.org/",
         "photo": "https://www.ksnt.com/wp-content/uploads/sites/86/2023/01/Rhino-Baby.jpeg?w=1280&h=720&crop=1"
     },
     {
@@ -44,7 +44,7 @@
         "species": "African Forest Elephant",
         "continent": "Africa",
         "foundation": "International Elephant Foundation",
-        "url": "",
+        "url": "https://elephantconservation.org/",
         "photo": "https://th-thumbnailer.cdn-si-edu.com/j0n5Fry99_R_omrPceeL7zef788=/1000x750/filters:no_upscale():focal(800x601:801x602)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/09/8e/098e0ee3-c720-4e43-abdb-2da9a474f512/gettyimages-630005462_web.jpg"
     },
     {
