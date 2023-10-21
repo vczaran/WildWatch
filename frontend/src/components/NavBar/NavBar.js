@@ -60,7 +60,7 @@ export default function NavBar () {
                 <i 
                     className="fa-solid fa-user"
                     style={{ color: "#1f2f4d" }} />
-                    &nbsp; About Us
+                    &nbsp; About
             </div>
             {modalOpen && modalType === "about-us" &&
                 <AboutUsModal 
