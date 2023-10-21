@@ -1,7 +1,7 @@
 import { geoOrthographic, geoPath, geoGraticule } from 'd3';
 import React, {useState, useCallback} from 'react';
 import $ from 'jquery';
-import ContinentModal from '../Continent Modal/ContinentModal';
+import ContinentModal from '../ContinentModal/ContinentModal';
 
 const width = 960;
 const height = 500;
