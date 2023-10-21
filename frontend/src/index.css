@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-image: url("/Users/ashley/Documents/WWC - Hackathon/WildWatch/frontend/assets/background.jpg");
+	background-size: cover;
 }
 
 ol, ul {
