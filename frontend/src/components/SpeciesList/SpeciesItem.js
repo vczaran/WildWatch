@@ -17,10 +17,11 @@ export default function SpeciesItem ({animal}) {
                         {name}
                     </h2>
                     <div>
-                        Continent:{continent}
+                        Continent: {continent}
                     </div>
+                    <br></br>
                     <div>
-                        Foundation: 
+                        Foundation: <br></br>
                         <a href={link} target="_blank" >
                             {foundation}
                         </a>

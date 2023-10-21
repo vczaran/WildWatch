@@ -22,14 +22,14 @@ export default function NavBar () {
                     WILDWATCH
                 </h1>
             </Link>
-            <Link to="/species" class="nav-link">
+            <Link to="/species" className="nav-link">
                 <i className="fa-solid fa-otter fa-2xl icon" style={{ color: "#1f2f4d" }} />
-                <h3 id="nav-species">Species List</h3>
+                &nbsp; Species List
             </Link>
 
             <div id="nav-info" onClick={openModal}>
                 <i className="fa-solid fa-circle-info fa-2xl icon" style={{color: "#1f2f4d",}} />
-                <h3>Info</h3>
+                &nbsp; About Us
             </div>
             {modalOpen && <ContinentModal closeModal={closeModal}/>}   
         </div>

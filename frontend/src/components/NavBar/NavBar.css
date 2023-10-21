@@ -6,13 +6,20 @@
 
 .nav-bar * {
     cursor: pointer;
+    height: 10vh;
+    font-size: 3vh;
 }
 
 .icon {
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 
 .nav-link {
     text-decoration:  none;
     color: black;
+}
+
+#nav-logo {
+    margin-top: 3vh;
+    font-size: 4vh;
 }

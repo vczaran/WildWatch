@@ -1,6 +1,7 @@
 .animal-item {
     display: flex;
     border: 1px solid black;
+    border-radius: 3vh;
     margin: 2vw;
     padding: 0px;
 }
@@ -13,11 +14,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
+    background-color: white;
 }
 
 .animal-image {
     object-fit: cover;
     height: 20vw;
     width: 25vw;
+    border-radius: 3vh;
+}
+
+.animal-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
 }
 
