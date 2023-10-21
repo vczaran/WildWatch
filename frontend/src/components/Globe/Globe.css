@@ -38,3 +38,7 @@ svg {
   fill: rgb(135, 139, 162);
   cursor: pointer;
 }
+body {
+  background-image: url("/Users/ashley/Documents/WWC - Hackathon/WildWatch/frontend/assets/background.jpg");
+  background-size: cover;
+}
