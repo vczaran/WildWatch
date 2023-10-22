@@ -4,9 +4,10 @@ import './SpeciesList.css'
 
 export default function SpeciesList () {
     const [data,setData] = useState([]);
+    const jsonUrl = '/speciesbycont.json';
 
     const getData = () => {
-        fetch('/speciesbycont.json'
+        fetch(jsonUrl
         ,{
             headers : { 
               'Content-Type': 'application/json',

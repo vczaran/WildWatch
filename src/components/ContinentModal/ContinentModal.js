@@ -1,3 +1,4 @@
+import { json } from "d3";
 import { Modal } from "../Modal/Modal";
 import "./ContinentModal.css"
 import SpeciesItemModal from "./SpeciesItemModal";
@@ -6,9 +7,10 @@ import { useEffect, useState } from "react";
 export default function ContinentModal (props) {
     const { closeModal, continent } = props;
     const [data, setData] = useState([]);
+    const jsonUrl = '/speciesbycont.json';
 
     const getData = () => {
-        fetch('/speciesbycont.json', {
+        fetch(jsonUrl, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

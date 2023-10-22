@@ -96,7 +96,7 @@ function handleClick (feature) {
 //   <g className="globe" >
 //   <path className = "sphere" d={ path({type: 'Sphere'})}/>
 //   {
-//         land.features.map(feature => (
+//         continents.features.map(feature => (
 //         <path className = "feature" d={ path(feature)}/>
 //        ))
 //    }

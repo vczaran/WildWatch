@@ -23,7 +23,7 @@ const AboutUsModal = (props) => {
                         Links to species-specific charities are listed underneath each animal, <br></br>
                         helping animal lovers around the world better focus their conservation efforts. <br></br>
                         All charities are verified for legitimacy and impact using Charity Navigator <br></br>
-                        (https://www.charitynavigator.org / https://www.charitynavigator.org) <br></br>
+                        (https://www.charitynavigator.org) <br></br>
                         so you can be assured that your contribution will go to the animals in need!</p>
                     <h1>About the Team</h1>
                     <div 
