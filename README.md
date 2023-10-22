@@ -18,5 +18,3 @@ WildWatch is currently a frontend-only application built with React. The interac
 - Australia: [Nature Australia](https://www.natureaustralia.org.au/what-we-do/our-priorities/wildlife/wildlife-stories/australias-endangered-animals/)
 
 All species data was cross-referenced agains the [IUCN Red List](https://www.iucnredlist.org/) to verify endangered status.
-
- 
