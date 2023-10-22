@@ -6,7 +6,7 @@ export default function SpeciesList () {
     const [data,setData] = useState([]);
 
     const getData = () => {
-        fetch('./SpeciesByCont.json'
+        fetch('/speciesbycont.json'
         ,{
             headers : { 
               'Content-Type': 'application/json',
