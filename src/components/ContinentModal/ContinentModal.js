@@ -23,7 +23,7 @@ export default function ContinentModal (props) {
 
     useEffect(() => {
         getData(continent);
-    }, continent);
+    }, [continent]);
 
     return (
         <Modal onClose={closeModal}>
