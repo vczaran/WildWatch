@@ -4,10 +4,9 @@ import './SpeciesList.css'
 
 export default function SpeciesList () {
     const [data,setData] = useState([]);
-    const jsonUrl = 'speciesbycont.json';
 
     const getData = () => {
-        fetch(jsonUrl
+        fetch('speciesbycont.json'
         ,{
             headers : { 
               'Content-Type': 'application/json',
@@ -29,7 +28,7 @@ export default function SpeciesList () {
 
     return (
         <div className="species-list">
-            {data.map((animal) =>  <SpeciesItem key={animal.id} animal={animal}/>)}
+            {data && data.length && data.map((animal) =>  <SpeciesItem key={animal.id} animal={animal}/>)}
         </div>
     )
 }

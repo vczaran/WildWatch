@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 export default function ContinentModal (props) {
     const { closeModal, continent } = props;
     const [data, setData] = useState([]);
-    const jsonUrl = 'speciesbycont.json';
 
     const getData = () => {
-        fetch(jsonUrl, {
+        fetch('speciesbycont.json'
+        , {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -31,7 +31,7 @@ export default function ContinentModal (props) {
         <Modal onClose={closeModal}>
             <h2 id="continent-title">{continent}</h2>
             <div id="species-grid">
-                { data.map((species) => {
+                { data && data.length && data.map((species) => {
                     return (
                         <SpeciesItemModal species={species}/>
                     )
