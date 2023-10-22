@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function ContinentModal (props) {
     const { closeModal, continent } = props;
     const [data, setData] = useState([]);
-    const jsonUrl = '/speciesbycont.json';
+    const jsonUrl = 'speciesbycont.json';
 
     const getData = () => {
         fetch(jsonUrl, {
